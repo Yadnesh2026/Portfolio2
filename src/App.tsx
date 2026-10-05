@@ -32,7 +32,6 @@ const certifications = [
 
 const exams = [
   { name: 'NPTEL · Object-Oriented Programming', score: '73', unit: '/ 100', note: 'Jan 2026' },
-  { name: 'CSS Training · Spoken Tutorial', score: '62.5', unit: '%', note: 'May 2026' },
   { name: 'BCA · Final result', score: '7.96', unit: 'CGPA', note: 'Mar 2025' },
 ]
 
@@ -44,10 +43,9 @@ function App() {
   return (
     <>
       <header className="topbar">
-        <a className="brand" href="#home" aria-label="Purva Bhujbal home"><span className="brand-mark">P<span>.</span></span><span className="brand-name">PURVA BHUJBAL</span></a>
         <button className="menu-toggle" aria-label={menuOpen ? 'Close menu' : 'Open menu'} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'} aria-label="Main navigation">
-          <a href="#about" onClick={closeMenu}>About</a><a href="#skills" onClick={closeMenu}>Skills</a><a href="#work" onClick={closeMenu}>Projects</a><a href="#journey" onClick={closeMenu}>Journey</a><a className="nav-contact" href="#contact" onClick={closeMenu}>Let’s talk <ArrowUpRight size={15} /></a>
+          <a href="#about" onClick={closeMenu}>About</a><a href="#skills" onClick={closeMenu}>Skills</a><a href="#work" onClick={closeMenu}>Projects</a><a href="#journey" onClick={closeMenu}>Journey</a>
         </nav>
       </header>
 
@@ -57,7 +55,7 @@ function App() {
             <div className="eyebrow"><span className="status-dot" /> OPEN TO OPPORTUNITIES <span className="eyebrow-rule" /></div>
             <h1>Thoughtful code.<br /><span>Useful</span> experiences.</h1>
             <p className="hero-intro">I’m <strong>Purva Narendra Bhujbal</strong> — an MCA student and aspiring software developer who enjoys turning careful thinking into dependable, user-friendly applications.</p>
-            <div className="hero-actions"><a className="button button-dark" href="#work">Explore my work <ArrowDownRight size={17} /></a><a className="text-link" href="#contact">Get in touch <ArrowUpRight size={16} /></a></div>
+            <div className="hero-actions"><a className="button button-dark" href="#work">Explore my work <ArrowDownRight size={17} /></a></div>
             <div className="hero-meta"><span><MapPin size={15} /> Amravati, Maharashtra</span><a href="mailto:purvabhujbal56@gmail.com"><Mail size={15} /> Say hello</a></div>
           </div>
           <div className="hero-art" aria-label="Decorative profile illustration">
@@ -97,7 +95,6 @@ function App() {
         <section className="contact section-wrap" id="contact"><div className="contact-panel"><div className="contact-copy"><div className="section-label light"><span>06 / START A CONVERSATION</span><span className="label-line" /></div><h2>Have a good<br />problem to <em>solve?</em></h2><p>I’m always happy to talk about software, new opportunities, or a project that could use a thoughtful approach.</p><a href="mailto:purvabhujbal56@gmail.com" className="contact-email">purvabhujbal56@gmail.com <ArrowUpRight size={16} /></a><a href="https://linkedin.com/in/purva-bhujbal-209101278" target="_blank" rel="noreferrer" className="linkedin-link"><Linkedin size={16} /> Find me on LinkedIn <ArrowUpRight size={14} /></a></div></div></section>
       </main>
 
-      <footer className="footer section-wrap"><a className="brand" href="#home"><span className="brand-mark">P<span>.</span></span><span className="brand-name">PURVA BHUJBAL</span></a><span>Made with care, curiosity & coffee <span className="footer-heart">♥</span></span><a href="#home" className="back-top">BACK TO TOP <ArrowUpRight size={14} /></a><small>© 2026 Purva Narendra Bhujbal</small></footer>
     </>
   )
 }
